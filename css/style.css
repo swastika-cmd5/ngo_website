@@ -40,7 +40,7 @@ nav a {
 
 /* ========== Hero Section ========== */
 .hero {
-  background: url('https://www.shutterstock.com/image-vector/banner-whit-raised-hands-multicultural-260nw-2487843891.jpg') no-repeat center center/cover;
+  background: url('https://img.freepik.com/premium-vector/group-diverse-people-seen-from-with-hands-raised-holding-heart-volunteer-work-ngo_175061-713.jpg') no-repeat center center/cover;
   height: 400px;
   display: flex;
   align-items: center;
@@ -232,7 +232,7 @@ nav a {
 }
 
 .newsletter p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin-bottom: 1rem;
   color: #15051c;
 }
@@ -269,5 +269,6 @@ footer {
 footer .socials {
   margin-bottom: 0.5rem;
 }
+
 
 
