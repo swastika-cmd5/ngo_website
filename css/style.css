@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+}
+
+/* ========== Header / Nav ========== */
+header {
+  background: #008080;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.donate-btn {
+  background-color: #f1c40f;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  background: url('https://www.shutterstock.com/image-vector/banner-whit-raised-hands-multicultural-260nw-2487843891.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(79, 5, 101); /* keep original color */
+  font-size: 2.5rem;
+  margin: 0;
+  text-shadow: 1px 1px 4px #000;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+.hero, .hero-img {
+  position: relative;
+}
+
+
+.hero .btn {
+  background: #8e44ad;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ========== Programs ========== */
+.programs {
+  padding: 2rem;
+  text-align: center;
+  background: #f8fad5;
+}
+
+.programs h2 {
+  font-size: 2rem;
+  color: #8e44ad;
+}
+
+.program-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin-top: 0.8rem;
+}
+
+/* ========== Impact Statistics ========== */
+.impact {
+  background:rgb(235, 238, 242);
+  text-align: center;
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.impact h2 {
+  font-size: 2rem;
+  color: #f1c40f;
+  margin-bottom: 1rem;
+}
+
+.impact ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.impact li {
+  margin: 0.5rem 0;
+  color: #000;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1rem;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide p {
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+.slide h4 {
+  color: #8e44ad;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding: 0.5rem 1rem;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background: #8e44ad;
+}
+
+
+/* ========== Partners Section ========== */
+.partners {
+  text-align: center;
+  padding: 2rem;
+  background: #f8fad5;
+}
+
+.partners h2 {
+  color: #8e44ad;
+  font-size: 1.8rem;
+}
+
+.partners .placeholder {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #ddd;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+/* ========== Newsletter Signup ========== */
+.newsletter {
+  background: rgb(235, 238, 242);
+  text-align: center;
+  padding: 3rem 2rem;
+  color: white;
+}
+
+.newsletter p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #15051c;
+}
+
+.newsletter form {
+  margin-top: 1rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background-color: #8e44ad;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+/* ========== Footer ========== */
+footer {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .socials {
+  margin-bottom: 0.5rem;
+}
+
+

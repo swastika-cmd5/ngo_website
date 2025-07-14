@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Empower Lives Foundation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">NGO NAME</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="education.html">Education</a>
+      <a href="shelter.html">Shelter Homes</a>
+      <a href="success.html">Success Stories</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+      <a href="news.html">News</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Support a child today.</h1>
+      <a href="donate.html" class="btn">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="programs">
+    <h2>Programs</h2>
+    <div class="program-cards">
+      <div class="card">
+        <img src="https://youngscholarz.com/wp-content/uploads/2021/10/education.jpeg" alt="Child Education">
+        <h3>Child Education</h3>
+      </div>
+      <div class="card">
+        <img src="https://sankalpfoundationindia.org/wp-content/uploads/2021/12/CAF1-scaled.jpg" alt="Women Training">
+        <h3>Women Training</h3>
+      </div>
+      <div class="card">
+        <img src="https://st3.depositphotos.com/13194036/18504/i/450/depositphotos_185049012-stock-photo-care.jpg" alt="Elderly Care">
+        <h3>Elderly Care</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Statistics Section -->
+  <section class="impact">
+    <h2>Impact Statistics</h2>
+    <ul>
+      <li>Children Educated: 5000+</li>
+      <li>Women skilled: 2500+</li>
+      <li>Elderly Sheltered: 1000+</li>
+    </ul>
+    <div class="carousel-container">
+      <div class="carousel" id="carousel">
+        <div class="slide active">
+          <img src="https://diplomatist.com/wp-content/uploads/2025/03/05.png" alt="Story 1">
+          <p>"Thanks to the NGO, I’m now in school and dreaming big!"</p>
+          <h4>– Rani, 10</h4>
+        </div>
+        <div class="slide">
+          <img src="https://im.whatshot.in/img/2022/Aug/collage-maker-01-aug-2022-0128-pm-1659340720.jpg" alt="Story 2">
+          <p>"I learned tailoring and now support my family independently."</p>
+          <h4>– Meera, 27</h4>
+        </div>
+        <div class="slide">
+          <img src="https://www.advitya.com/wp-content/uploads/2017/07/Photo-2.jpg" alt="Story 3">
+          <p>"I found shelter and companionship in my old age."</p>
+          <h4>– Dinesh, 72</h4>
+        </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>    
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners">
+    <h2>OUR STRATEGIC PARTNERS</h2>
+    <div class="placeholder">[Partner Logos]</div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="newsletter">
+    <p>Leave your email so we can share our impact and how you can help.</p>
+    <form>
+      <input type="email" placeholder="Enter your email">
+      <button type="submit">JOIN</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials">[Social Media Links]</div>
+    <p>&copy; 2025 NGO Name. All rights reserved. Designed with care.</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+  
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove("active");
+          if (i === index) slide.classList.add("active");
+        });
+      }
+  
+      function moveSlide(step) {
+        currentIndex = (currentIndex + step + slides.length) % slides.length;
+        showSlide(currentIndex);
+      }
+  
+      // Initial show
+      showSlide(currentIndex);
+  
+      // Make the buttons work
+      document.querySelector(".prev").addEventListener("click", () => moveSlide(-1));
+      document.querySelector(".next").addEventListener("click", () => moveSlide(1));
+  
+      // Optional: Auto-slide every 6s
+      setInterval(() => moveSlide(1), 6000);
+    });
+  </script>
+</body>
+</html>
+
